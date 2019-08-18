@@ -32,7 +32,7 @@ export default class Places extends Component {
             </div>
 
             <div name="Tourism Places">
-                {/* <h1>Tourism Places:</h1> */}
+                <h1>Tourism Places:</h1>
                 {/* {allPlaces} Don't forget the array */}
             </div>
         </div>

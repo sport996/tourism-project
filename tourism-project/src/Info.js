@@ -1,13 +1,9 @@
 import React, {Component} from 'react';
-import {
-  BrowserRouter as Router,
-  Route,
-  Link
-} from 'react-router-dom';
+
 import axios from 'axios';
 
 
-export default class CityInfo extends Component {
+export default class Info extends Component {
   // Constructor
   state = {
     name: "",
@@ -33,6 +29,7 @@ export default class CityInfo extends Component {
       <div>
         <div name="Information">
           <h1>City Information: {this.state.info}</h1>
+          
         </div>
       </div>
     );

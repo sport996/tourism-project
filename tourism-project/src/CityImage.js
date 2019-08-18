@@ -17,7 +17,7 @@ export default class CityImage extends Component{
           console.log(response)
           this.setState({
             name: response.data.xxxx,
-            image: response.data.xxxx
+            image: ""
           })
       })
   }
