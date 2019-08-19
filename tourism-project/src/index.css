@@ -11,3 +11,8 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+.hero {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}

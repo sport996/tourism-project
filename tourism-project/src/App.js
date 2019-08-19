@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import CityInfo from './CityInfo';
+import Video from './Video';
 // import {
 //   BrowserRouter as Router,
 //   Route,
@@ -15,6 +16,7 @@ class App extends Component {
 
       <div>
         <CityInfo />
+        <Video />
       </div>
       
     );
