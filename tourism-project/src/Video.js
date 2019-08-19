@@ -24,9 +24,7 @@ componentDidMount(){
 
         this.setState(seta)
 
-        // this.setState({
-        //   video: response.data.items[0].id
-        // })
+     
     })
     }
   
