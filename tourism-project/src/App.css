@@ -31,3 +31,8 @@
     transform: rotate(360deg);
   }
 }
+.hero {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
