@@ -10,9 +10,10 @@ cursor: pointer;
 .videoTitle{
   text-align: center;
   text-transform: uppercase;
-  font-style: oblique;
-  font-family: "Gill Sans", sans-serif;
-  
+  /* font-style: oblique; */
+  /* font-family:  sans-serif; */
+  text-shadow: 1px 1px rgb(8, 8, 8);
+  color: #6c757d
 }
 /* .container{
   display: inline;
