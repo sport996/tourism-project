@@ -41,14 +41,16 @@ render(){
 
     } );
     return (
-        <div>
-
+        <div className='videoTitle'>
+          <h2>Explore More</h2>
           <Iframe link= {this.state.currentLink} />
         <div className='container'>
-
+    
             {videos}
+      
         </div>
         </div>
+        
     );
 
 
