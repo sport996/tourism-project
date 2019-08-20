@@ -10,7 +10,7 @@ import {
   Container,
   Button
 } from "reactstrap";
-import "../App.css";
+import "../src/App.css";
 
 class NavbarMain extends React.Component {
   constructor(props) {

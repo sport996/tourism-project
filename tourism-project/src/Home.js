@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import "../App.css";
+import "../src/App.css";
 import Hero from "./Hero";
 import Package from "./Package";
 import MainCarousel from "./Carousel";

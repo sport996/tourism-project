@@ -1,9 +1,9 @@
 import React, { Component } from "react";
-import Jeddah from "../img/Jeddah.jpg";
-import  Rayadh from "../img/Rayadh.jpg";
-import alaa from "../img/alaa.jpg";
-import Abha from "../img/Abha.jpg";
-import Dammam from "../img/dammam.jpg";
+import Jeddah from "./img/Jeddah.jpg";
+import  Rayadh from "./img/Rayadh.jpg";
+import alaa from "./img/alaa.jpg";
+import Abha from "./img/Abha.jpg";
+import Dammam from "./img/dammam.jpg";
 import {
   Carousel,
   CarouselItem,

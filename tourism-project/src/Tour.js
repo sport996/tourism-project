@@ -1,11 +1,11 @@
 import React from "react";
 import { Container, Row, Col, Button } from "reactstrap";
-import "../App.css";
+import "../src/App.css";
 import tours from "./Package";
-import imgCard1 from "../img/img-card (1).jpg";
-import imgCard2 from "../img/img-card (2).jpg";
-import imgCard3 from "../img/img-card (3).jpg";
-import imgCard4 from "../img/img-card (4).jpg";
+import imgCard1 from "./img/img-card (1).jpg";
+import imgCard2 from "./img/img-card (2).jpg";
+import imgCard3 from "./img/img-card (3).jpg";
+import imgCard4 from "./img/img-card (4).jpg";
 
 
 const Tour = () => (

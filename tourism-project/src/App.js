@@ -1,9 +1,9 @@
 import React, { Component } from "react";
 import "./App.css";
 import { Router, Link } from "@reach/router";
-import NavbarMain from "./components/Navbar";
-import Home from "./components/Home";
-import Tour from "./components/Tour";
+import NavbarMain from "./Navbar";
+import Home from "./Home";
+import Tour from "./Tour";
 import axios from 'axios';
 
 

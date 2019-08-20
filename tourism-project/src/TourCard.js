@@ -7,7 +7,7 @@ import {
   CardSubtitle,
   Button
 } from "reactstrap";
-import "../App.css";
+import "../src/App.css";
 
 const TourCard = ({ tourcard }) => {
   const { img, alt, title, subtitle } = tourcard;

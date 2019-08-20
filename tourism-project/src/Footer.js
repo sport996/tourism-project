@@ -1,10 +1,10 @@
 import React, { Component } from "react";
 import { Container, Row, Col, Button } from "reactstrap";
-import "../App.css";
-import { ReactComponent as Facebook } from "../assets/svg/facebook.svg";
-import { ReactComponent as Twitter } from "../assets/svg/twitter.svg";
-import { ReactComponent as Linkedin } from "../assets/svg/linkedin.svg";
-import { ReactComponent as Instagram } from "../assets/svg/instagram.svg";
+import "../src/App.css";
+import { ReactComponent as Facebook } from "./assets/svg/facebook.svg";
+import { ReactComponent as Twitter } from "./assets/svg/twitter.svg";
+import { ReactComponent as Linkedin } from "./assets/svg/linkedin.svg";
+import { ReactComponent as Instagram } from "./assets/svg/instagram.svg";
 
 class Footer extends Component {
   render() {
