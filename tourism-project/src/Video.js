@@ -38,9 +38,8 @@ render(){
     } );
 
     return(
-        <div>
+        <div ClassName='container'>
             {videos}
-            
         </div>
     );
 }
