@@ -1,27 +1,26 @@
-import React, { Component } from 'react';
-import './App.css';
-import CityInfo from './CityInfo';
-import Video from './Video';
-// import {
-//   BrowserRouter as Router,
-//   Route,
-//   Link
-// } from 'react-router-dom';
-// import Routers from './Routers';
+import React, { Component } from "react";
+import "./App.css";
+import { Router, Link } from "@reach/router";
+import NavbarMain from "./Navbar";
+import Home from "./Home";
+import Tour from "./Tour";
+import axios from 'axios';
+
 
 class App extends Component {
+
   render() {
-
     return (
-
-      <div>
-        <CityInfo />
-        <Video />
+      <div className="App">
+        <NavbarMain />
+        <Router>
+          <Home path="/" />
+          <Tour path="tour" />
+        </Router>
       </div>
-      
     );
-    
   }
+
 }
 
 export default App;
