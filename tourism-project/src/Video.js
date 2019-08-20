@@ -33,7 +33,7 @@ render(){
 
 
     const videos = this.state.fullVidLink.map  ((elem, index) => {
-        return <AllVideos task= {elem} key={index} />
+        return <AllVideos vid= {elem} key={index} />
         
     } );
 
