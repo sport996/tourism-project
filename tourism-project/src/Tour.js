@@ -1,4 +1,4 @@
-import React from "react";
+import React ,{Component} from "react";
 import { Container, Row, Col, Button } from "reactstrap";
 import "../src/App.css";
 import tours from "./Package";
@@ -8,21 +8,26 @@ import imgCard3 from "./img/img-card (3).jpg";
 import imgCard4 from "./img/img-card (4).jpg";
 
 
-const Tour = () => (
-  
-  <div className="subComponent">
-    <Container>
+class Tour extends Component {
+
+  state ={ 
+    name:"" ,
+    description :""
+  }
+
+  render() {
+
+
+
+    let city = this.props.nameCity.filter(elm=> elm.id == this.props.match.params.id)
+   let newCity = city.map(elm=>{
+    return(  <Container>
       <section className="tour-cover item-center">
-        <img src={imgCard1} alt="" />
-        <h1>Ala'a</h1>
+        {/* <img src={} alt="" />  */}
+        <h1>{elm.name}</h1>
         <h4>Ala'a Mountan</h4>
-        <p> In almost no time, the city of Al-Ula in northwest Saudi Arabia went
-              from being relatively unknown to a very early symbol of success for
-              the Kingdom’s ambitious Vision 2030 reform plan. Not many places in
-              the world can say they are sitting on 3,000 years of history, which is
-              the case with Al-Ula, which is home to the UNESCO World Heritage
-              Site of Madain Saleh.
-        </p>
+        <p> {elm.description}
+    </p>
       </section>
       <section className="tour-info">
         <Row>
@@ -30,10 +35,10 @@ const Tour = () => (
             <div className="tour-desc">
               <p>
                 Population: 32,500
-                <br></br>
+            <br></br>
                 Weather: summer(37- 43) winter (12-20)
-                <br></br>
-                
+            <br></br>
+
               </p>
               <h4>Activities:</h4>
               <li>Winter at Tantora</li>
@@ -43,15 +48,15 @@ const Tour = () => (
                  El-Roumi perform. The people of Al-Ula hosted 37,000 visitors
                  from 72 countries around the world during the first successful
                  annual Winter at Tantora festival.
-               </p>
-               <li>Hot Air Balloon</li>
-               <p>This festival presented a blueprint for adventure tourism in
-                  Saudi Arabia. Next, the Dakar Rally will take place there in 2020.
-                 </p>
-            
+           </p>
+              <li>Hot Air Balloon</li>
+              <p>This festival presented a blueprint for adventure tourism in
+                 Saudi Arabia. Next, the Dakar Rally will take place there in 2020.
+             </p>
+
             </div>
           </Col>
-          
+
           <Col sm="4">
             <div className="tour-gallery">
               <a href={imgCard1}>
@@ -71,8 +76,16 @@ const Tour = () => (
         </Row>
       </section>
     </Container>
-  </div>
+    )
+    })
 
-);
+    return (
+      <div className="subComponent">
+        {newCity}
+      </div>
 
+    )
+
+  }
+}
 export default Tour;
