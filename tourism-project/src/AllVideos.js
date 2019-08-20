@@ -4,7 +4,7 @@ import axios from 'axios';
 export default class AllVideos extends Component{
 
 render(){
-    console.log(this.props.task)
+    console.log()
     return(
         <div>
             <iframe width="420" height="320"

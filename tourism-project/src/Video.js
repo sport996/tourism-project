@@ -4,7 +4,7 @@ import AllVideos from './AllVideos';
 
 export default class Video extends Component{
     state ={
-        ids: ['B38SHiCHCgI', 'g2Na82FqROo', 'lihLRwa5ZLw'],
+        ids: ['B38SHiCHCgI', 'g2Na82FqROo', 'lihLRwa5ZLw','LuKzTODYOgE','OEJ8suXoGhU','g3KTlbrAdyI','bt7vNryFGIw'],
         name: [],
         fullVidLink: []
     }
