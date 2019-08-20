@@ -15,27 +15,27 @@ import {
 const items = [
   {
     src: Rayadh,
-    altText: "Slide 1",
+    altText: "",
     caption: "Riyadh"
   },
   {
     src: Dammam,
-    altText: "Slide 2",
+    altText: "",
     caption: "Dammam"
   },
   {
     src: alaa,
-    altText: "Slide 3",
+    altText: "",
     caption: "Ala'a"
   },
   {
     src: Jeddah,
-    altText: "Slide 4",
+    altText: "",
     caption: "Jeddah"
   },
   {
     src: Abha,
-    altText: "Slide 5",
+    altText: "",
     caption: "Abha"
   }
   

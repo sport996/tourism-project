@@ -24,9 +24,8 @@ class Tour extends Component {
    let newCity = city.map(elm=>{
     return(  <Container>
       <section className="tour-cover item-center">
-        {/* <img src={} alt="" />  */}
         <h1>{elm.name}</h1>
-        <img src={elm.picture} />
+        <img src={elm.picture} width="720" height='360'/>
         <p>{elm.category}</p>
         <p> {elm.description}</p>
         
