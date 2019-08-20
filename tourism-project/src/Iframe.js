@@ -2,18 +2,17 @@ import React, {Component} from 'react';
 import "../src/App.css";
 import "../src/index.css";
 
-export default class AllVideos extends Component{
-    handle
+export default class Iframe extends Component{
+
 render(){
     
     return(
         
         <div className='video'>
             
-            <img onClick={this.props.getVideo} width="200" height="150"
-            src={this.props.vid} 
-            
-            />
+            <iframe onClick={this.props.getVideo} width="600" height="300"
+            src={this.props.link} >
+            </iframe>
             
         </div>
     );

@@ -1,3 +1,13 @@
+.video{
+  display: inline;
+
+}
+/* .container{
+  display: inline;
+  float: left;
+  width:33.3%;
+  padding: 5px;
+} */
 .cover-page {
   height: 100vh;
   /* background: pink; */
