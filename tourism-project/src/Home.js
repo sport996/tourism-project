@@ -11,7 +11,7 @@ class Home extends Component {
       <div>
         <Hero />
         <MainCarousel />
-        <Package />
+        <Package nameCity={this.props.nameCity} />
         <Video />
         <Footer />
        

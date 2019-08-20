@@ -30,7 +30,6 @@ componentDidMount(){
      
     })
     }
-  
 }
 
 getVideo(link) {
