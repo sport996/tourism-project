@@ -34,27 +34,26 @@ componentDidMount(){
 }
 
 getVideo(link) {
-this.setState({currentLink:'https://www.youtube.com/embed/' +link})
-}
+    this.setState({currentLink:'https://www.youtube.com/embed/'+link})
+    }
 render(){
-
-
     const videos = this.state.thumpnails.map  ((elem, index) => {
         return <AllVideos getVideo={()=>this.getVideo(elem.id)} vid= {elem.image} key={index} />
-        
+
     } );
     return (
         <div>
-   
+
           <Iframe link= {this.state.currentLink} />
         <div className='container'>
-            
+
             {videos}
 
         </div>
         </div>
     );
 
-    
+
 }
 }
+

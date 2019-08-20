@@ -5,17 +5,17 @@ import "../src/index.css";
 export default class Iframe extends Component{
 
 render(){
-    
+
     return(
-        
-        <div className='video'>
-            
+
+        <div className='frame'>
+
             <iframe onClick={this.props.getVideo} width="600" height="300"
             src={this.props.link} >
             </iframe>
-            
+
         </div>
     );
-    
+
 }
 }
