@@ -16,7 +16,7 @@ componentDidMount(){
     for (let i = 0; i < this.state.ids.length; i ++) {
         axios({
             method: "GET",
-            url: `https://www.googleapis.com/youtube/v3/videos?id=${this.state.ids[i]}&key=AIzaSyBXeIljl7VKhnQnr1qTkGWfY-cmjbta_78&part=snippet,statistics`
+            url: `https://www.googleapis.com/youtube/v3/videos?id=${this.state.ids[i]}&key=AIzaSyAwslADzrvgOWagrSOaSm3ac8AanC7J2zM&part=snippet,statistics`
         })
     .then(response => {
         console.log(response)
@@ -47,7 +47,6 @@ render(){
         <div className='container'>
 
             {videos}
-
         </div>
         </div>
     );

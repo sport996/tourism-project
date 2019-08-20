@@ -1,11 +1,11 @@
 
 .video{
   display: inline;
-
+cursor: pointer;
 }
 .frame{
   text-align: center;
- 
+  cursor: pointer;
 }
 /* .container{
   display: inline;

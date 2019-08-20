@@ -9,12 +9,8 @@ render(){
     
     return(
         <div className='video'>
-
         <img onClick={this.props.getVideo} width="200" height="150"
-        src={this.props.vid} 
-
-        />
-
+        src={this.props.vid}/>
     </div>
 );
 
