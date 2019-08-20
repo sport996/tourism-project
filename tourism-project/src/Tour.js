@@ -10,10 +10,11 @@ import imgCard4 from "./img/img-card (4).jpg";
 
 class Tour extends Component {
 
-  state ={ 
-    name:"" ,
-    description :""
-  }
+  // state ={ 
+  //   // name:"" ,
+  //   // description :"",
+
+  // }
 
   render() {
 
@@ -23,36 +24,25 @@ class Tour extends Component {
    let newCity = city.map(elm=>{
     return(  <Container>
       <section className="tour-cover item-center">
-        {/* <img src={} alt="" />  */}
         <h1>{elm.name}</h1>
-        <h4>Ala'a Mountan</h4>
-        <p> {elm.description}
-    </p>
+        <img src={elm.picture} width="720" height='360'/>
+        <p>{elm.category}</p>
+        <p> {elm.description}</p>
+        
+        
       </section>
       <section className="tour-info">
         <Row>
           <Col sm="8">
             <div className="tour-desc">
-              <p>
-                Population: 32,500
-            <br></br>
-                Weather: summer(37- 43) winter (12-20)
-            <br></br>
-
-              </p>
-              <h4>Activities:</h4>
-              <li>Winter at Tantora</li>
-              <p>It is a music festival, which was sold out every night between
-                 December and February as visitors flocked to see legends such
-                 as Andrea Bocelli, Yanni, Mohammed Abdo and Majida
-                 El-Roumi perform. The people of Al-Ula hosted 37,000 visitors
-                 from 72 countries around the world during the first successful
-                 annual Winter at Tantora festival.
-           </p>
-              <li>Hot Air Balloon</li>
-              <p>This festival presented a blueprint for adventure tourism in
-                 Saudi Arabia. Next, the Dakar Rally will take place there in 2020.
-             </p>
+             
+            <h4></h4>
+            <h5> Population: {elm.population}</h5>
+            
+            <h5> Weather: {elm.weather} </h5>
+            <h5> Location: <a href={elm.location}>{elm.location}</a> </h5>
+           <h5>Activities:{elm.activities} </h5>
+            
 
             </div>
           </Col>

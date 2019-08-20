@@ -2,16 +2,6 @@ import React, { Component } from "react";
 import { Container, Row, CardColumns, Badge } from "reactstrap";
 import TourCard from "./TourCard";
 import "../src/App.css";
-import imgCard1 from "./img/img-card (1).jpg";
-import imgCard2 from "./img/img-card (2).jpg";
-import imgCard3 from "./img/img-card (3).jpg";
-import imgCard4 from "./img/img-card (4).jpg";
-import imgCard5 from "./img/img-card (5).jpg";
-import imgCard6 from "./img/img-card (6).jpg";
-import imgCard7 from "./img/img-card (7).jpg";
-import imgCard8 from "./img/img-card (8).jpg";
-import imgCard9 from "./img/img-card (9).jpg";
-import imgBarobaybay from "./img/barobaybay.jpg";
 import axios from "axios";
 
 

@@ -39,15 +39,7 @@ class NavbarMain extends React.Component {
           <Container>
             <NavbarBrand href="/">Tourism</NavbarBrand>
             <NavbarToggler onClick={this.toggle} />
-            <Collapse isOpen={this.state.isOpen} navbar>
-              <Nav className="ml-auto" navbar>
-            
-                <NavItem>
-                  <NavLink href="/">Browse</NavLink>
-                </NavItem>
-                
-              </Nav>
-            </Collapse>
+
           </Container>
         </Navbar>
       </div>
