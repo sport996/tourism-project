@@ -18,7 +18,6 @@
 
 <p align="center"><img src="./tourism-project/images/main.png" width="600" height="400"></p>
 
-<p align="center"><img src="./tourism-project/images/main.png" width="600" height="400"></p>
 
 <p align="center"><img src="./tourism-project/images/main2.png" width="600" height="400"></p>
 
