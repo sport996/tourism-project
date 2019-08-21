@@ -5,6 +5,7 @@ import NavbarMain from "./Navbar";
 import Home from "./Home";
 import Tour from "./Tour";
 import axios from 'axios';
+// import Background from 'background';
 
 
 class App extends Component {
@@ -47,6 +48,7 @@ class App extends Component {
           <Route path="/tour/:id"  render={(props) => <Tour {...props} images={this.state.images} nameCity={this.state.nameCity} />}/>
         
         </BrowserRouter>
+       
       </div>
     );
   }
