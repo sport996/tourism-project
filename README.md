@@ -16,11 +16,11 @@
  
 ## <span > <p align="center" >  You could find different choices of amazing places in Saudia Arabia by one click! </p> </span>
 
-<p align="center"><img src="./images/main.png" width="600" height="400"></p>
+<p align="center"><img src="./tourism-project/images/main.png" width="600" height="400"></p>
 
-<p align="center"><img src="./images/main.png" width="600" height="400"></p>
+<p align="center"><img src="./tourism-project/images/main.png" width="600" height="400"></p>
 
-<p align="center"><img src="./images/main2.png" width="600" height="400"></p>
+<p align="center"><img src="./tourism-project/images/main2.png" width="600" height="400"></p>
 
 ## How To Use:
 The goal of this project is to make it possible for users to find amazing places in Saudi Arabia. It gives information about each city along with differnt images. Also, there are some videos for differnt cities that help to get a clear idea about cities. 
