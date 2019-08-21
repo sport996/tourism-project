@@ -4,15 +4,21 @@ import "../src/index.css";
 
 export default class AllVideos extends Component{
 
-    handle
+
+   video = ()=>{
+    this.props.video(this.props.i)
+   }
 render(){
-    
+
     return(
-        <div className='video'>
-            
-        <img onClick={this.props.getVideo} width="200" height="150"
-        src={this.props.vid}/>
+
+        <div  style = {{backgroundImage: `url(${this.props.vid})`}} class = "video" id ={this.props.i} onClick = {this.video}>
+        <h4  class="names" style = {{color: "white"}}> {this.props.name[this.props.i]}</h4>
+        <div style = {{color: "white"}}> <h1> {this.props.ele} </h1></div>
+       
+      
     </div>
+   
 );
 
 }

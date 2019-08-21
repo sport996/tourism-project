@@ -9,7 +9,7 @@ export default class Video extends Component{
         name: [],
         fullVidLink: [],
         thumpnails: [],
-        currentLink: "" 
+        currentLink: "https://www.youtube.com/embed/B38SHiCHCgI"
     }
 // "https://www.googleapis.com/youtube/v3/videos?id=7lCDEYXw3mM&key=AIzaSyBXeIljl7VKhnQnr1qTkGWfY-cmjbta_78&part=snippet,statistics"
 componentDidMount(){
@@ -32,19 +32,23 @@ componentDidMount(){
     }
 }
 
-getVideo(link) {
-    this.setState({currentLink:'https://www.youtube.com/embed/'+link})
+getVideo = (i) => {
+
+    console.log("stop")
+    this.setState({
+        currentLink : this.state.fullVidLink[i]
+    })
+
     }
 render(){
-    const videos = this.state.thumpnails.map  ((elem, index) => {
-        return <AllVideos getVideo={()=>this.getVideo(elem.id)} vid= {elem.image} key={index} />
-
-    } );
+    const videos = this.state.thumpnails.map  ((elem, i) => {
+        return <AllVideos video={this.getVideo} vid= {elem.image} i={i} name ={this.state.name} />
+    } ); 
     return (
         <div className='videoTitle'>
           <h2>Explore More</h2>
           <Iframe link= {this.state.currentLink} />
-        <div className='container'>
+        <div className='container flex'>
     
             {videos}
      <br/> <br/>
