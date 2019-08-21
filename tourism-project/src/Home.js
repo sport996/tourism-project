@@ -9,6 +9,7 @@ class Home extends Component {
   render() {
     return (
       <div>
+        
         <Hero />
         <MainCarousel />
         <Package nameCity={this.props.nameCity} />

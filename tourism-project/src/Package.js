@@ -4,7 +4,6 @@ import TourCard from "./TourCard";
 import "../src/App.css";
 import axios from "axios";
 
-
 const itemCategories = [
   "All",
   "Sea",
@@ -28,15 +27,9 @@ class Package extends Component {
     })
     
     .then(response => { 
-
-      // console.log(response)
-      // let city = this.state.nameCity
-      // city.push(response.data[i].name)
         this.setState({
-          // nameCity: response.data.name
           nameCity: response.data
         })
-        // console.log("**",response.data)
   }).catch(arr=> {
     console.log(arr)
   })
@@ -48,7 +41,7 @@ class Package extends Component {
   
 
   render() {
-        console.log(this.state.nameCity)
+        // console.log(this.state.nameCity)
 
     const { cards, category } = this.state;
     return (
@@ -56,7 +49,7 @@ class Package extends Component {
         <Container>
           <header className="headerTitle text-center">
             <h1>A BETTER WAY TO VISIT SAUDI ARABIA</h1>
-            <p>CHOOSE YOUR ADVANTURE FROM OUR CATEGORY</p>
+            <p>CHOOSE YOUR ADVENTURE FROM OUR CATEGORY</p>
           </header>
           <section className="packageBody text-center">
             {itemCategories.map((badge, index) => (

@@ -10,18 +10,20 @@ import imgCard4 from "./img/img-card (4).jpg";
 
 class Tour extends Component {
 
-  // state ={ 
-  //   // name:"" ,
-  //   // description :"",
+  render(){
 
-  // }
-
-  render() {
+    
 
 
+  let city = this.props.nameCity.filter(elm=> elm.id == this.props.match.params.id)
+  let newCity = city.map(elm=>{
+    let images = this.props.images.filter(image=>image.city == elm.name)
 
-    let city = this.props.nameCity.filter(elm=> elm.id == this.props.match.params.id)
-   let newCity = city.map(elm=>{
+    let allImages = images.map(image=>{
+      return (<a href={image.image_url}>
+      <img src={image.image_url} alt="" />
+    </a>)
+    })
     return(  <Container>
       <section className="tour-cover item-center">
         <h1>{elm.name}</h1>
@@ -49,18 +51,7 @@ class Tour extends Component {
 
           <Col sm="4">
             <div className="tour-gallery">
-              <a href={imgCard1}>
-                <img src={imgCard1} alt="" />
-              </a>
-              <a href={imgCard2}>
-                <img src={imgCard2} alt="" />
-              </a>
-              <a href={imgCard3}>
-                <img src={imgCard3} alt="" />
-              </a>
-              <a href={imgCard4}>
-                <img src={imgCard4} alt="" />
-              </a>
+              {allImages}
             </div>
           </Col>
         </Row>

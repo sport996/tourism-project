@@ -11,8 +11,8 @@ export default class Video extends Component{
         thumpnails: [],
         currentLink: "" 
     }
-// "https://www.googleapis.com/youtube/v3/videos?id=7lCDEYXw3mM&key=AIzaSyBXeIljl7VKhnQnr1qTkGWfY-cmjbta_78&part=snippet,statistics"
-componentDidMount(){
+
+    componentDidMount(){
     for (let i = 0; i < this.state.ids.length; i ++) {
         axios({
             method: "GET",
@@ -45,7 +45,6 @@ render(){
           <h2>Explore More</h2>
           <Iframe link= {this.state.currentLink} />
         <div className='container'>
-    
             {videos}
      <br/> <br/>
         </div>
