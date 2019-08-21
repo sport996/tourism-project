@@ -1,7 +1,22 @@
 
 .video{
-  display: inline;
+  /* display: inline; */
 cursor: pointer;
+height: 170px;
+width: 230px;
+/* margin: 10px 10px; */
+opacity: 0.6;
+filter: alpha(opacity=50);
+
+}
+.video:hover {
+  opacity: 1.0;
+  filter: alpha(opacity=100); 
+}
+.flex{
+  display: flex;
+flex-wrap: wrap;
+
 }
 .frame{
   text-align: center;
@@ -240,4 +255,12 @@ cursor: pointer;
 .active-pink-3 input[type="text"] {
   border: 1px solid rgb(240, 48, 48);
   box-shadow: 0 0 0 1px #f48f8f;
+}
+.names{
+  margin-top:30px; 
+  font-size: 15px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #2b2b2b;
+  text-shadow: 1px 2px rgb(8, 8, 8);
+  font-weight: bold;
 }
