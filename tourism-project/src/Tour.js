@@ -1,19 +1,10 @@
 import React ,{Component} from "react";
-import { Container, Row, Col, Button } from "reactstrap";
+import { Container, Row, Col } from "reactstrap";
 import "../src/App.css";
-import tours from "./Package";
-import imgCard1 from "./img/img-card (1).jpg";
-import imgCard2 from "./img/img-card (2).jpg";
-import imgCard3 from "./img/img-card (3).jpg";
-import imgCard4 from "./img/img-card (4).jpg";
-
 
 class Tour extends Component {
 
   render(){
-
-    
-
 
   let city = this.props.nameCity.filter(elm=> elm.id == this.props.match.params.id)
   let newCity = city.map(elm=>{
@@ -27,7 +18,7 @@ class Tour extends Component {
     return(  <Container>
       <section className="tour-cover item-center">
         <h1>{elm.name}</h1>
-        <img src={elm.picture} width="720" height='360'/>
+        <img src={elm.picture} width="720" height='480'/>
         <p>{elm.category}</p>
         <p> {elm.description}</p>
         
@@ -63,6 +54,7 @@ class Tour extends Component {
     })
 
     return (
+      
       <div className="subComponent">
         {newCity}
       </div>

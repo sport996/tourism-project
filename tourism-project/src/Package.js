@@ -13,37 +13,17 @@ const itemCategories = [
 ];
 
 class Package extends Component {
+
   state = {
     cards: [],
-    category: "All",
-    tours:[],
-    nameCity:[]
+    category: "All"
   };
 
-  componentDidMount() {
-    axios ({
-      method: "GET",
-      url: "https://cors-anywhere.herokuapp.com/https://tourism-project-sei.herokuapp.com/cities.json"
-    })
-    
-    .then(response => { 
-        this.setState({
-          nameCity: response.data
-        })
-  }).catch(arr=> {
-    console.log(arr)
-  })
-  }
-
-    // this.setState({ 
-    //   cards: tours
-    //  });
-  
 
   render() {
-        // console.log(this.state.nameCity)
 
     const { cards, category } = this.state;
+
     return (
       <div className="subComponent-lg" id="packageBody">
         <Container>

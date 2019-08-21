@@ -17,16 +17,13 @@ export default class Video extends Component{
     for (let i = 0; i < this.state.ids.length; i ++) {
         axios({
             method: "GET",
-            url: `https://www.googleapis.com/youtube/v3/videos?id=${this.state.ids[i]}&key=AIzaSyAwslADzrvgOWagrSOaSm3ac8AanC7J2zM&part=snippet,statistics`
+            url: `https://www.googleapis.com/youtube/v3/videos?id=${this.state.ids[i]}&key=AIzaSyBXeIljl7VKhnQnr1qTkGWfY-cmjbta_78&part=snippet,statistics`
         })
     .then(response => {
-        console.log(response)
         let seta = {...this.state}
         seta.name.push(response.data.items[0].snippet.title)
         seta.thumpnails.push({image: response.data.items[0].snippet.thumbnails.medium.url, id:this.state.ids[i]})
-        seta.fullVidLink.push('https://www.youtube.com/embed/' + this.state.ids[i]) // name and title by res.
-        console.log(response.data.items[0].snippet.thumbnails.medium.url)
-
+        seta.fullVidLink.push('https://www.youtube.com/embed/' + this.state.ids[i]) 
         this.setState(seta)
      
     })
@@ -34,7 +31,6 @@ export default class Video extends Component{
 }
 
 getVideo = (i) => {
-
     console.log("stop")
     this.setState({
         currentLink : this.state.fullVidLink[i]
@@ -49,7 +45,6 @@ render(){
         <div className='videoTitle'>
           <h2>Explore More</h2>
           <Iframe link= {this.state.currentLink} />
-{/*  */}
         <div className='container '>
         <div style={{"padding":"0 60px","maxWidth":1000,"margin":"0 auto"}}>
   <ItemsCarousel
@@ -71,15 +66,11 @@ render(){
     {videos}
   </ItemsCarousel>
 </div>
-            {/* {videos} */}
      <br/> <br/>
         </div>
-
-        {/*  */}
         </div>
         
     );
-
 
 }
 }
