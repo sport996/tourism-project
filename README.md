@@ -12,7 +12,7 @@
 
 ## <span > <p align="center" > Not any more :surfer: Traveling is easier than you think :wink: </p> </span>
 
-## <span > <p align="center" >  with *Tourism in Saudi Arabia* web application </p> </span>
+## <span > <p align="center" >  with our web application  *Tourism in Saudi Arabia*   </p> </span>
  
 ## <span > <p align="center" >  You could find different choices of amazing places in Saudia Arabia by one click! </p> </span>
 
@@ -41,7 +41,7 @@ It is a full stack application using Ruby on Rails and Postgresql.
 
 
 ## :soon: Future Improvements:
-* User could search for resturants.
+* User could show famous resturants.
 * User could write comments. 
 * User could share images. 
 
