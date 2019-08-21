@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import axios from 'axios';
 import AllVideos from './AllVideos';
 import Iframe from './Iframe';
+import ItemsCarousel from 'react-items-carousel';
 
 export default class Video extends Component{
     state ={
@@ -48,11 +49,33 @@ render(){
         <div className='videoTitle'>
           <h2>Explore More</h2>
           <Iframe link= {this.state.currentLink} />
-        <div className='container flex'>
-    
-            {videos}
+{/*  */}
+        <div className='container '>
+        <div style={{"padding":"0 60px","maxWidth":1000,"margin":"0 auto"}}>
+  <ItemsCarousel
+    placeholderItem={<div style={{ height: 200, background: '#EEE' }} />}
+    enablePlaceholder={true}
+    numberOfPlaceholderItems={3}
+    numberOfCars={3}
+    gutter={12}
+    slidesToScroll={2}
+    chevronWidth={100}
+    outsideChevron={true}
+    showSlither={false}
+    firstAndLastGutter={false}
+    activeItemIndex={this.state.activeItemIndex}
+    requestToChangeActive={value => this.setState({ activeItemIndex: value })}
+    rightChevron={'>'}
+    leftChevron={'<'}
+  >
+    {videos}
+  </ItemsCarousel>
+</div>
+            {/* {videos} */}
      <br/> <br/>
         </div>
+
+        {/*  */}
         </div>
         
     );
