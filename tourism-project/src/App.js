@@ -46,7 +46,7 @@ class App extends Component {
 <Switch>
 
           <Route path="/" exact render={(props) => <Home {...props} nameCity={this.state.nameCity} />}/>
-          <Route path="/tour/:id"  render={(props) => <Tour {...props} images={this.state.images} nameCity={this.state.nameCity} />}/>
+          <Route path="/tourism-project/tour/:id"  render={(props) => <Tour {...props} images={this.state.images} nameCity={this.state.nameCity} />}/>
 </Switch>
         
         </HashRouter>
