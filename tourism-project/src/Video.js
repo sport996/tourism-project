@@ -16,7 +16,7 @@ componentDidMount(){
     for (let i = 0; i < this.state.ids.length; i ++) {
         axios({
             method: "GET",
-            url: `https://www.googleapis.com/youtube/v3/videos?id=${this.state.ids[i]}&key=AIzaSyBXeIljl7VKhnQnr1qTkGWfY-cmjbta_78&part=snippet,statistics`
+            url: `https://www.googleapis.com/youtube/v3/videos?id=${this.state.ids[i]}&key=AIzaSyAwslADzrvgOWagrSOaSm3ac8AanC7J2zM&part=snippet,statistics`
         })
     .then(response => {
         console.log(response)
@@ -33,27 +33,27 @@ componentDidMount(){
 }
 
 getVideo(link) {
-this.setState({currentLink:'https://www.youtube.com/embed/' +link})
-}
+    this.setState({currentLink:'https://www.youtube.com/embed/'+link})
+    }
 render(){
-
-
     const videos = this.state.thumpnails.map  ((elem, index) => {
         return <AllVideos getVideo={()=>this.getVideo(elem.id)} vid= {elem.image} key={index} />
-        
+
     } );
     return (
-        <div>
-   
+        <div className='videoTitle'>
+          <h2>Explore More</h2>
           <Iframe link= {this.state.currentLink} />
         <div className='container'>
-            
+    
             {videos}
-
+     <br/> <br/>
         </div>
         </div>
+        
     );
 
-    
+
 }
 }
+
