@@ -43,7 +43,7 @@ class App extends Component {
       <div className="App">
         <NavbarMain />
 <Switch>
-          <Route path="/" exact render={(props) => <Home {...props} nameCity={this.state.nameCity} />}/>
+          <Route path="/home" exact render={(props) => <Home {...props} nameCity={this.state.nameCity} />}/>
           <Route path="/:id"  render={(props) => <Tour {...props} images={this.state.images} nameCity={this.state.nameCity} />}/>
 </Switch>
         
