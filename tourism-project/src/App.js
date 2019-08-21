@@ -42,7 +42,7 @@ class App extends Component {
     return (
       <div className="App">
         <NavbarMain />
-        <HashRouter basename='/'>
+        <HashRouter >
 <Switch>
 
           <Route path="/" exact render={(props) => <Home {...props} nameCity={this.state.nameCity} />}/>
