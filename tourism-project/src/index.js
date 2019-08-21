@@ -7,5 +7,7 @@ import "bootstrap/dist/css/bootstrap.css";
 // Add custom css import below this line
 import "./index.css";
 
-ReactDOM.render(<App />, document.getElementById("root"));
+ReactDOM.render(  <HashRouter >
+             <App/>
+            </HashRouter>, document.getElementById("root"));
 registerServiceWorker();
