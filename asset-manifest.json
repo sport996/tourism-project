@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/tourism-project/static/css/main.0b4972e5.chunk.css",
+    "main.js": "/tourism-project/static/js/main.3331941c.chunk.js",
+    "main.js.map": "/tourism-project/static/js/main.3331941c.chunk.js.map",
+    "runtime~main.js": "/tourism-project/static/js/runtime~main.56054b25.js",
+    "runtime~main.js.map": "/tourism-project/static/js/runtime~main.56054b25.js.map",
+    "static/css/2.22a7d4ef.chunk.css": "/tourism-project/static/css/2.22a7d4ef.chunk.css",
+    "static/js/2.03c5fb4d.chunk.js": "/tourism-project/static/js/2.03c5fb4d.chunk.js",
+    "static/js/2.03c5fb4d.chunk.js.map": "/tourism-project/static/js/2.03c5fb4d.chunk.js.map",
+    "index.html": "/tourism-project/index.html",
+    "precache-manifest.cd00896f5cb2e2a81e811615fd845bad.js": "/tourism-project/precache-manifest.cd00896f5cb2e2a81e811615fd845bad.js",
+    "service-worker.js": "/tourism-project/service-worker.js",
+    "static/css/2.22a7d4ef.chunk.css.map": "/tourism-project/static/css/2.22a7d4ef.chunk.css.map",
+    "static/css/main.0b4972e5.chunk.css.map": "/tourism-project/static/css/main.0b4972e5.chunk.css.map",
+    "static/media/Abha.jpg": "/tourism-project/static/media/Abha.32ad6595.jpg",
+    "static/media/Jeddah.jpg": "/tourism-project/static/media/Jeddah.b620a3fd.jpg",
+    "static/media/Rayadh.jpg": "/tourism-project/static/media/Rayadh.711eca45.jpg",
+    "static/media/alaa.jpg": "/tourism-project/static/media/alaa.e03e385d.jpg",
+    "static/media/App.css": "/tourism-project/static/media/bg.711eca45.jpg",
+    "static/media/dammam.jpg": "/tourism-project/static/media/dammam.8c278894.jpg",
+    "static/media/facebook.180a6ca6.svg": "/tourism-project/static/media/facebook.180a6ca6.svg",
+    "static/media/img-card (1).jpg": "/tourism-project/static/media/img-card (1).e03e385d.jpg",
+    "static/media/img-card (2).jpg": "/tourism-project/static/media/img-card (2).b620a3fd.jpg",
+    "static/media/img-card (3).jpg": "/tourism-project/static/media/img-card (3).835b4f2c.jpg",
+    "static/media/img-card (4).jpg": "/tourism-project/static/media/img-card (4).8c278894.jpg",
+    "static/media/instagram.6cbcb76e.svg": "/tourism-project/static/media/instagram.6cbcb76e.svg",
+    "static/media/linkedin.beb71356.svg": "/tourism-project/static/media/linkedin.beb71356.svg",
+    "static/media/twitter.43449f1c.svg": "/tourism-project/static/media/twitter.43449f1c.svg"
+  }
+}
