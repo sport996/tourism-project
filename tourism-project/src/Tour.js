@@ -1,31 +1,24 @@
 import React ,{Component} from "react";
-import { Container, Row, Col, Button } from "reactstrap";
+import { Container, Row, Col } from "reactstrap";
 import "../src/App.css";
-import tours from "./Package";
-import imgCard1 from "./img/img-card (1).jpg";
-import imgCard2 from "./img/img-card (2).jpg";
-import imgCard3 from "./img/img-card (3).jpg";
-import imgCard4 from "./img/img-card (4).jpg";
-
 
 class Tour extends Component {
 
-  // state ={ 
-  //   // name:"" ,
-  //   // description :"",
+  render(){
 
-  // }
+  let city = this.props.nameCity.filter(elm=> elm.id == this.props.match.params.id)
+  let newCity = city.map(elm=>{
+    let images = this.props.images.filter(image=>image.city == elm.name)
 
-  render() {
-
-
-
-    let city = this.props.nameCity.filter(elm=> elm.id == this.props.match.params.id)
-   let newCity = city.map(elm=>{
+    let allImages = images.map(image=>{
+      return (<a href={image.image_url}>
+      <img src={image.image_url} alt="" />
+    </a>)
+    })
     return(  <Container>
       <section className="tour-cover item-center">
         <h1>{elm.name}</h1>
-        <img src={elm.picture} width="720" height='360'/>
+        <img src={elm.picture} width="720" height='480'/>
         <p>{elm.category}</p>
         <p> {elm.description}</p>
         
@@ -51,18 +44,7 @@ class Tour extends Component {
 
           <Col sm="4">
             <div className="tour-gallery">
-              <a href={imgCard1}>
-                <img src={imgCard1} alt="" />
-              </a>
-              <a href={imgCard2}>
-                <img src={imgCard2} alt="" />
-              </a>
-              <a href={imgCard3}>
-                <img src={imgCard3} alt="" />
-              </a>
-              <a href={imgCard4}>
-                <img src={imgCard4} alt="" />
-              </a>
+              {allImages}
             </div>
           </Col>
         </Row>
@@ -72,6 +54,7 @@ class Tour extends Component {
     })
 
     return (
+      
       <div className="subComponent">
         {newCity}
       </div>

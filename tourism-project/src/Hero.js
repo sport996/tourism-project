@@ -1,7 +1,9 @@
 import React from "react";
+
 import  {Component} from 'react';
 
 import { Button } from "reactstrap";
+
 import "../src/App.css";
 var img = ["https://www.sauditourism.sa/ar/aboutKSA/Regions/Riyadh/PublishingImages/Riyadh.jpg" , 
 "https://www.sauditourism.sa/ar/aboutKSA/Regions/Jeddah/PublishingImages/JeddahBanner.jpg"]

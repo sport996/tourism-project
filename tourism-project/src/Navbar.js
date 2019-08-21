@@ -1,14 +1,8 @@
 import React from "react";
 import {
-  Collapse,
   Navbar,
-  NavbarToggler,
   NavbarBrand,
-  Nav,
-  NavItem,
-  NavLink,
   Container,
-  Button
 } from "reactstrap";
 import "../src/App.css";
 
@@ -38,8 +32,6 @@ class NavbarMain extends React.Component {
         >
           <Container>
             <NavbarBrand href="/">Tourism</NavbarBrand>
-            <NavbarToggler onClick={this.toggle} />
-
           </Container>
         </Navbar>
       </div>

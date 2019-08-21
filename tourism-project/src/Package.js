@@ -4,7 +4,6 @@ import TourCard from "./TourCard";
 import "../src/App.css";
 import axios from "axios";
 
-
 const itemCategories = [
   "All",
   "Sea",
@@ -14,49 +13,23 @@ const itemCategories = [
 ];
 
 class Package extends Component {
+
   state = {
     cards: [],
-    category: "All",
-    tours:[],
-    nameCity:[]
+    category: "All"
   };
 
-  componentDidMount() {
-    axios ({
-      method: "GET",
-      url: "https://cors-anywhere.herokuapp.com/https://tourism-project-sei.herokuapp.com/cities.json"
-    })
-    
-    .then(response => { 
-
-      // console.log(response)
-      // let city = this.state.nameCity
-      // city.push(response.data[i].name)
-        this.setState({
-          // nameCity: response.data.name
-          nameCity: response.data
-        })
-        // console.log("**",response.data)
-  }).catch(arr=> {
-    console.log(arr)
-  })
-  }
-
-    // this.setState({ 
-    //   cards: tours
-    //  });
-  
 
   render() {
-        console.log(this.state.nameCity)
 
     const { cards, category } = this.state;
+
     return (
       <div className="subComponent-lg" id="packageBody">
         <Container>
           <header className="headerTitle text-center">
             <h1>A BETTER WAY TO VISIT SAUDI ARABIA</h1>
-            <p>CHOOSE YOUR ADVANTURE FROM OUR CATEGORY</p>
+            <p>CHOOSE YOUR ADVENTURE FROM OUR CATEGORY</p>
           </header>
           <section className="packageBody text-center">
             {itemCategories.map((badge, index) => (
