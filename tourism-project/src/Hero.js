@@ -1,18 +1,11 @@
 import React from "react";
-
 import  {Component} from 'react';
-
-import { Button } from "reactstrap";
-
 import "../src/App.css";
+
 var img = ["https://www.sauditourism.sa/ar/aboutKSA/Regions/Riyadh/PublishingImages/Riyadh.jpg" , 
 "https://www.sauditourism.sa/ar/aboutKSA/Regions/Jeddah/PublishingImages/JeddahBanner.jpg"]
 var i = 0;
 
-// 
-// setInterval(time, 1000)
-// start her 
-// setInterval(this.time, 1000)
 class Hero extends Component{
 state = {
     img : ["https://www.sauditourism.sa/ar/aboutKSA/Regions/Riyadh/PublishingImages/Riyadh.jpg" , 

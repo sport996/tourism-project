@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import { Container, Row, CardColumns, Badge } from "reactstrap";
 import TourCard from "./TourCard";
 import "../src/App.css";
-import axios from "axios";
 
 const itemCategories = [
   "All",

@@ -1,12 +1,10 @@
 import React, { Component } from "react";
 import "./App.css";
-import { BrowserRouter, HashRouter, Route, Switch} from 'react-router-dom'
+import { BrowserRouter, Route} from 'react-router-dom'
 import NavbarMain from "./Navbar";
 import Home from "./Home";
 import Tour from "./Tour";
 import axios from 'axios';
-// import Background from 'background';
-
 
 class App extends Component {
   state = {
@@ -41,14 +39,12 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+        
         <NavbarMain />
-{/* <Switch> */}
-      <BrowserRouter>
+        <BrowserRouter>
           <Route path="/:id"  component={(props) => <Tour {...props} images={this.state.images} nameCity={this.state.nameCity} />}/>
           <Route path="/" exact component={(props) => <Home {...props} nameCity={this.state.nameCity} />}/>
-      </BrowserRouter>
-{/* </Switch> */}
-        
+        </BrowserRouter>
        
       </div>
     );
