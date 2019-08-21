@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import axios from 'axios';
 import AllVideos from './AllVideos';
 import Iframe from './Iframe';
+import ItemsCarousel from 'react-items-carousel';
 
 export default class Video extends Component{
     state ={
@@ -9,7 +10,7 @@ export default class Video extends Component{
         name: [],
         fullVidLink: [],
         thumpnails: [],
-        currentLink: "" 
+        currentLink: "https://www.youtube.com/embed/B38SHiCHCgI"
     }
 
     componentDidMount(){
@@ -32,22 +33,54 @@ export default class Video extends Component{
     }
 }
 
-getVideo(link) {
-    this.setState({currentLink:'https://www.youtube.com/embed/'+link})
+getVideo = (i) => {
+
+    console.log("stop")
+    this.setState({
+        currentLink : this.state.fullVidLink[i]
+    })
+
     }
 render(){
-    const videos = this.state.thumpnails.map  ((elem, index) => {
-        return <AllVideos getVideo={()=>this.getVideo(elem.id)} vid= {elem.image} key={index} />
-
-    } );
+    const videos = this.state.thumpnails.map  ((elem, i) => {
+        return <AllVideos video={this.getVideo} vid= {elem.image} i={i} name ={this.state.name} />
+    } ); 
     return (
         <div className='videoTitle'>
           <h2>Explore More</h2>
           <Iframe link= {this.state.currentLink} />
+<<<<<<< HEAD
         <div className='container'>
             {videos}
+=======
+{/*  */}
+        <div className='container '>
+        <div style={{"padding":"0 60px","maxWidth":1000,"margin":"0 auto"}}>
+  <ItemsCarousel
+    placeholderItem={<div style={{ height: 200, background: '#EEE' }} />}
+    enablePlaceholder={true}
+    numberOfPlaceholderItems={3}
+    numberOfCars={3}
+    gutter={12}
+    slidesToScroll={2}
+    chevronWidth={100}
+    outsideChevron={true}
+    showSlither={false}
+    firstAndLastGutter={false}
+    activeItemIndex={this.state.activeItemIndex}
+    requestToChangeActive={value => this.setState({ activeItemIndex: value })}
+    rightChevron={'>'}
+    leftChevron={'<'}
+  >
+    {videos}
+  </ItemsCarousel>
+</div>
+            {/* {videos} */}
+>>>>>>> 28e037ab91f2d2b4cd60b7c46eff7821e6f4e85b
      <br/> <br/>
         </div>
+
+        {/*  */}
         </div>
         
     );

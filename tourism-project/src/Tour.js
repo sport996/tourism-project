@@ -38,12 +38,14 @@ class Tour extends Component {
           <Col sm="8">
             <div className="tour-desc">
              
-            <h4></h4>
-            <h5> Population: {elm.population}</h5>
             
-            <h5> Weather: {elm.weather} </h5>
-            <h5> Location: <a href={elm.location}>{elm.location}</a> </h5>
-           <h5>Activities:{elm.activities} </h5>
+            <h6> Population: {elm.population}</h6>
+            
+            <h6> Weather: {elm.weather} </h6>
+            <h6> Location: <a href={elm.location}>{elm.location}</a> </h6>
+           <h5>Activities:</h5>
+           <br></br>
+           <p>{elm.activities}</p> 
             
 
             </div>
