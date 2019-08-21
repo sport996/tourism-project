@@ -49,10 +49,6 @@ render(){
         <div className='videoTitle'>
           <h2>Explore More</h2>
           <Iframe link= {this.state.currentLink} />
-<<<<<<< HEAD
-        <div className='container'>
-            {videos}
-=======
 {/*  */}
         <div className='container '>
         <div style={{"padding":"0 60px","maxWidth":1000,"margin":"0 auto"}}>
@@ -76,7 +72,6 @@ render(){
   </ItemsCarousel>
 </div>
             {/* {videos} */}
->>>>>>> 28e037ab91f2d2b4cd60b7c46eff7821e6f4e85b
      <br/> <br/>
         </div>
 
