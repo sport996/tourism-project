@@ -1,9 +1,8 @@
 
 .video{
-  /* display: inline; */
 cursor: pointer;
 height: 170px;
-width: 230px;
+width: 250px;
 /* margin: 10px 10px; */
 opacity: 0.6;
 filter: alpha(opacity=50);
@@ -61,7 +60,7 @@ flex-wrap: wrap;
   padding: 80px 0px;
 }
 #hero {
-  background: url("./img/bg.jpg") center center;
+  /* background: url("./img/bg.jpg") ; */
   background-size: cover;
   background-attachment: fixed;
   color: white;
@@ -257,10 +256,12 @@ flex-wrap: wrap;
   box-shadow: 0 0 0 1px #f48f8f;
 }
 .names{
-  margin-top:30px; 
+  margin-top:10px; 
   font-size: 15px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: #2b2b2b;
   text-shadow: 1px 2px rgb(8, 8, 8);
   font-weight: bold;
 }
+
+

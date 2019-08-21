@@ -10,7 +10,6 @@ class Home extends Component {
     return (
       <div>
         <Hero />
-        <MainCarousel />
         <Package nameCity={this.props.nameCity} />
         <Video />
         <Footer />

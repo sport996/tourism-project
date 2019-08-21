@@ -9,6 +9,7 @@
     "carousel": "0.0.3",
     "react": "^16.9.0",
     "react-awesome-slider": "^1.0.1",
+    "react-background-slideshow": "^1.0.4",
     "react-bootstrap-carousel": "^3.4.2",
     "react-dom": "^16.9.0",
     "react-image-show": "^0.3.4",
