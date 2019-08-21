@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "d46bb9d28605563a9f56c429e54a13ae",
+    "revision": "c5f2d0126a4b9c8528a92e8b5e41a255",
     "url": "/tourism-project/index.html"
   },
   {
-    "revision": "b2522d710d3cc8202f6d",
+    "revision": "cd509b9e7cbaac61a47a",
     "url": "/tourism-project/static/css/2.22a7d4ef.chunk.css"
   },
   {
-    "revision": "fcd2ffec115234eca7dd",
+    "revision": "b27fc573b56df4d594c0",
     "url": "/tourism-project/static/css/main.0b4972e5.chunk.css"
   },
   {
-    "revision": "b2522d710d3cc8202f6d",
-    "url": "/tourism-project/static/js/2.9e656ed8.chunk.js"
+    "revision": "cd509b9e7cbaac61a47a",
+    "url": "/tourism-project/static/js/2.78181db0.chunk.js"
   },
   {
-    "revision": "fcd2ffec115234eca7dd",
-    "url": "/tourism-project/static/js/main.92e9f7cf.chunk.js"
+    "revision": "b27fc573b56df4d594c0",
+    "url": "/tourism-project/static/js/main.b696722c.chunk.js"
   },
   {
     "revision": "69a009c0909f73e425f9",
