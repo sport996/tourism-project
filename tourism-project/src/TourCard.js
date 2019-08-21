@@ -14,7 +14,7 @@ const TourCard = ({ tourcard }) => {
     <Card>
       <CardImg top width="100%" height="100%" src={picture}  />
       <CardBody>
-        <Button outline color="secondary" className="float-right" href={`/tourism-project/tour/${id}/`}>
+        <Button outline color="secondary" className="float-right" href={`/${id}/`}>
           Read more 
         </Button>
         <CardTitle>{name}</CardTitle>
