@@ -1,3 +1,4 @@
+In order to run the app, you'll have to clone then run npm install commnad
 # <span > <p align="center" > Tourism Project  :airplane:  </p> </span>
 
 ## <span > <p align="center" > Need to travel soon but you don't have </p> </span>
