@@ -9,12 +9,12 @@ import {
 import "../src/App.css";
 
 const TourCard = ({ tourcard }) => {
-  const { picture, name, id} = tourcard;
+  const { picture, id, name} = tourcard;
   return (
     <Card>
       <CardImg top width="100%" height="100%" src={picture}  />
       <CardBody>
-        <Button outline color="secondary" className="float-right" href={`/${id}/`}>
+        <Button outline color="secondary" className="float-right" href={`/#/${id}/`}>
           Read more 
         </Button>
         <CardTitle>{name}</CardTitle>
@@ -22,4 +22,5 @@ const TourCard = ({ tourcard }) => {
     </Card>
   );
 };
+
 export default TourCard;

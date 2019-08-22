@@ -1,3 +1,5 @@
+// This component shows the line or slider of videos from All videos component
+
 import React, {Component} from 'react';
 import axios from 'axios';
 import AllVideos from './AllVideos';
