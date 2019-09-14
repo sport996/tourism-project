@@ -5,6 +5,7 @@ import {
   Container,
 } from "reactstrap";
 import "../src/App.css";
+import logo from "./logo.png";
 
 class NavbarMain extends React.Component {
   constructor(props) {
@@ -31,7 +32,7 @@ class NavbarMain extends React.Component {
           className="navDark"
         >
           <Container>
-            <NavbarBrand href="/">Tourism</NavbarBrand>
+            <NavbarBrand href="/"> <img src={logo} width="30" height="35"/> Tourism</NavbarBrand>
           </Container>
         </Navbar>
       </div>

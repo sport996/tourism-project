@@ -1,6 +1,7 @@
 import React from "react";
 import  {Component} from 'react';
 import "../src/App.css";
+import logo from "./logo.png";
 
 var img = ["https://www.sauditourism.sa/ar/aboutKSA/Regions/Riyadh/PublishingImages/Riyadh.jpg" , 
 "https://www.sauditourism.sa/ar/aboutKSA/Regions/Jeddah/PublishingImages/JeddahBanner.jpg"]
@@ -46,7 +47,7 @@ componentDidMount (){
         <main style = {{backgroundImage: `url(${this.state.img[this.state.i]})`}}  className="cover-page" id="hero">
           <section className="wrapped-page">
             <div className="item-center">
-              <h1>Tourism in Saudi Arabia</h1>
+              <h1><img src={logo} width="60" height="70"/> Tourism in Saudi Arabia</h1>
               <br></br>
               <h3>Tours | Travel | Guide</h3>
               <br></br>

@@ -23,7 +23,7 @@ class Tour extends Component {
         <Container>
           <section className="tour-cover item-center">
             <h1>{elm.name}</h1>
-            <img src={elm.picture} width="720" height="480" />
+            <img src={elm.picture} width="100%" height="100%" />
             <p>{elm.category}</p>
             <p> {elm.description}</p>
           </section>

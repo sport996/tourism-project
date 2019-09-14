@@ -19,7 +19,7 @@ export default class Video extends Component{
     for (let i = 0; i < this.state.ids.length; i ++) {
         axios({
             method: "GET",
-            url: `https://www.googleapis.com/youtube/v3/videos?id=${this.state.ids[i]}&key=AIzaSyBXeIljl7VKhnQnr1qTkGWfY-cmjbta_78&part=snippet,statistics`
+            url: `https://www.googleapis.com/youtube/v3/videos?id=${this.state.ids[i]}&key=AIzaSyD6B_6sgvPzyc8EAAfjppc7_Btmpx89mP4&part=snippet,statistics`
         })
     .then(response => {
         let seta = {...this.state}
