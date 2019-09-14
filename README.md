@@ -1,4 +1,13 @@
+# ![GA Logo](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) 
+
+# Project #3: React.js
+
+# Deployed link:
+https://sport996.github.io/tourism-project/
+
+# Instructions to fork and run
 In order to run the app, you'll have to clone then run npm install commnad
+
 # <span > <p align="center" > Tourism Project  :airplane:  </p> </span>
 
 ## <span > <p align="center" > Need to travel soon but you don't have </p> </span>
