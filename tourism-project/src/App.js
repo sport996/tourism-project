@@ -42,10 +42,10 @@ class App extends Component {
         
         <NavbarMain />
         <HashRouter>
-          <Switch>
+          {/* <Switch> */}
           <Route path="/:id"  component={(props) => <Tour {...props} images={this.state.images} nameCity={this.state.nameCity} />}/>
           <Route path="/" exact component={(props) => <Home {...props} nameCity={this.state.nameCity} />}/>
-          </Switch>
+          {/* </Switch> */}
         </HashRouter>
        
       </div>
