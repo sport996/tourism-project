@@ -32,7 +32,7 @@ class NavbarMain extends React.Component {
           className="navDark"
         >
           <Container>
-            <NavbarBrand href="/"> <img src={logo} width="30" height="35"/> Tourism</NavbarBrand>
+            <NavbarBrand href="/"> <img src={'https://i.postimg.cc/Qxg0FJbs/logo.png'} width="30" height="35"/> Tourism</NavbarBrand>
           </Container>
         </Navbar>
       </div>

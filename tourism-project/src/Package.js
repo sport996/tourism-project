@@ -21,7 +21,7 @@ class Package extends Component {
 
   render() {
 
-    const { cards, category } = this.state;
+    const {category} = this.state;
 
     return (
       <div className="subComponent-lg" id="packageBody">
